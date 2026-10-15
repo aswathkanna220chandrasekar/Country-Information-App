@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌍 Country Information</h1>
+        <div class="search-box"> <input type="text" id="countryInput" placeholder="Enter country name"> 
+            <button
+                onclick="searchCountry()">Search</button> 
+            </div>
+        <p id="message"></p>
+        <div id="result" class="hidden"> <img id="flag" src="" alt="Country Flag">
+            <h2 id="countryName"></h2>
+            <div class="info"> <strong>Capital:</strong> <span id="capital"></span> </div>
+            <div class="info"> <strong>Population:</strong> <span id="population"></span> </div>
+            <div class="info"> <strong>Region:</strong> <span id="region"></span> </div>
+            <div class="info"> <strong>Currency:</strong> <span id="currency"></span> </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
